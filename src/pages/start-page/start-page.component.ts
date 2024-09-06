@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LayoutService } from '../../shared/services/layout.service';
 
 @Component({
   selector: 'app-start-page',
@@ -8,8 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './start-page.component.scss'
 })
 export class StartPageComponent {
+
+  constructor(private layoutService: LayoutService){}
   
   onClickSend() {
-    // TODO
+    this.layoutService.toggleWestContainer(true);
   }
 }
