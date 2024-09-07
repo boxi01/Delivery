@@ -1,9 +1,9 @@
 <div class="container">
-  <div>
-    <h3>Personal Data</h3>
-    <p>Please provide personal data</p>
-  </div>
-  <div>
+  <div class="content">
+    <div>
+      <h3>Personal Data</h3>
+      <p>Please provide your personal data</p>
+    </div>
     <form [formGroup]="personalForm" class="personal-data__form">
       <app-custom-input [name]="'name'" [label]="'Name'"></app-custom-input>
       <app-custom-input
@@ -16,6 +16,6 @@
         [label]="'Confirm e-mail'"
       ></app-custom-input>
     </form>
-    <button>Next</button>
+    <button class="btn btn-primary">Next</button>
   </div>
 </div>

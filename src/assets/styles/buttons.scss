@@ -1,0 +1,21 @@
+.btn {
+  padding: 0.5rem;
+  border-radius: $btn-border-radius;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Inter", system-ui;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: solid 2px $primary-color;
+  color: white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
