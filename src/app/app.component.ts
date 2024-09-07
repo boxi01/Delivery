@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 import { LayoutService } from '../shared/services/layout.service';
 import { CommonModule } from '@angular/common';
+import { StepperComponent } from '../shared/components/stepper/stepper.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavbarComponent],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, StepperComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

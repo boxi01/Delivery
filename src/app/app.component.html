@@ -3,6 +3,9 @@
     <app-navbar />
   </div>
   <div class="west">
+    @if(isWestExpanded) {
+    <app-stepper />
+    }
     <router-outlet />
   </div>
   <div class="east"></div>
