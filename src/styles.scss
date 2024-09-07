@@ -14,3 +14,7 @@ html, body {
 p, h3 {
   margin: 0;
 }
+
+* {
+  box-sizing: content-box;
+}
